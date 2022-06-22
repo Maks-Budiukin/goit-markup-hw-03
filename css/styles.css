@@ -18,7 +18,29 @@ body {
       
 }
 
+h1,h2,h3,h4,h5,h6,p,ul,ol {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    /* max-width: 1600px; */
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* justify-content: space-between; */
+}
+
+/* .navigation {
+    display: flex;
+    align-items: center;
+} */
+
 .logo {
+    margin-left: 215px;
+    margin-right: 93px;
+    padding: 25px, 0px;
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
     font-size: 26px;
@@ -32,9 +54,17 @@ body {
 
 .menu {
     list-style: none;
+    display: flex;
+    align-items: center;
 }
 
+
+
 .menu-link {
+    
+
+
+
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
@@ -52,8 +82,22 @@ body {
     color: var(--accent-color);
 }
 
+.menu .menu-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.container .item + .item {
+    margin-left: 50px;
+}
+
+
 .contact {
     list-style: none;
+    display: flex;
+    margin-left: auto;
+    margin-right: 220px;
 }
 
 .contact-link {
@@ -67,6 +111,12 @@ body {
 .contact-link:hover,
 .contact-link:focus {
     color: var(--accent-color);
+}
+
+.contact .contact-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 /* Main page */
