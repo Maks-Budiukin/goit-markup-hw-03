@@ -24,22 +24,37 @@ h1,h2,h3,h4,h5,h6,p,ul,ol {
 }
 
 .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 94px;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    border: 1px solid tomato;
+
+}
+
+.header-container {
     display: flex;
-    /* max-width: 1600px; */
     align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
+    margin-top: 0px;
+    /* margin-left: auto;
+    margin-right: auto; */
+
+
+
+    border: 1px solid tomato;
     /* justify-content: space-between; */
 }
 
-/* .navigation {
+.navigation {
     display: flex;
     align-items: center;
-} */
+}
 
 .logo {
-    margin-left: 215px;
-    margin-right: 93px;
+    
     padding: 25px, 0px;
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
@@ -53,6 +68,7 @@ h1,h2,h3,h4,h5,h6,p,ul,ol {
 }
 
 .menu {
+    margin-left: 93px;
     list-style: none;
     display: flex;
     align-items: center;
@@ -88,7 +104,7 @@ h1,h2,h3,h4,h5,h6,p,ul,ol {
     padding-bottom: 32px;
 }
 
-.container .item + .item {
+.header-container .item + .item {
     margin-left: 50px;
 }
 
@@ -97,7 +113,7 @@ h1,h2,h3,h4,h5,h6,p,ul,ol {
     list-style: none;
     display: flex;
     margin-left: auto;
-    margin-right: 220px;
+    
 }
 
 .contact-link {
@@ -123,23 +139,45 @@ h1,h2,h3,h4,h5,h6,p,ul,ol {
 
 .hero {
     background-color: var(--secondary-bg-color);
+    
+}
+
+.hero-section {
+    max-width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+
+    border: 1px solid tomato;
+}
+
+.hero-position {
+    max-width: 696px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-title {
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--main-bg-color);
 }
 
 .hero-button {
+    margin-top: 30px;
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    border: 0px;
+
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    text-align: center;
     letter-spacing: 0.06em;
     color: var(--main-bg-color);
     background-color: var(--accent-color);
@@ -150,6 +188,8 @@ h1,h2,h3,h4,h5,h6,p,ul,ol {
 .hero-button:focus {
     background-color: var(--blue-button-hover);
 }
+
+
 
 .offer-title {
     position: absolute;
@@ -165,8 +205,14 @@ h1,h2,h3,h4,h5,h6,p,ul,ol {
         overflow: hidden;
 }
 
-.offer-list {
+.flex-list {
     list-style: none;
+    /* margin-top: 94px; */
+    display: flex;
+}
+
+.flex-list .list-item + .list-item {
+    margin-left: 30px;
 }
 
 .offer-list-title {
@@ -189,10 +235,36 @@ h1,h2,h3,h4,h5,h6,p,ul,ol {
 
 .duties-list {
     list-style: none;
+    margin-top: 50px;
 }
 
 .team {
+    /* padding-top: 94px;
+    padding-left: auto;
+    padding-right: auto;
+    padding-bottom: 94px; */
     background-color: var(--section-bg-color);
+}
+
+.team .container {
+    padding-top: 94px;
+    padding-left: auto;
+    padding-right: auto;
+    padding-bottom: 94px
+}
+
+.team-card {
+    /* display: block; */
+    /* border: 0px; */
+    flex-basis: 270px;
+    min-height: 368px;
+    background-color: var(--main-bg-color);
+}
+
+.team-photo {
+    display: block;
+    max-width: 270px;
+    border: 0px;
 }
 
 .team-title {
@@ -204,6 +276,7 @@ h1,h2,h3,h4,h5,h6,p,ul,ol {
 
 .team-list {
     list-style: none;
+    margin-top: 50px;
 }
 
 .team-list-item {
@@ -211,6 +284,8 @@ h1,h2,h3,h4,h5,h6,p,ul,ol {
 }
 
 .team-name {
+    margin-top: 30px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -219,6 +294,8 @@ h1,h2,h3,h4,h5,h6,p,ul,ol {
 }
 
 .team-position {
+    margin-top: 10px;
+
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -228,18 +305,34 @@ h1,h2,h3,h4,h5,h6,p,ul,ol {
 /* footer */
 
 .footer {
-    color: var(--main-bg-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: var(--secondary-bg-color);
 }
+
+.logo-footer {
+    color: var(--main-bg-color);
+    display: block;
+    margin-bottom: 20px;
+}
+
 .location {
     font-style: normal;
+    
 }
 
 .location-list {
     list-style: none;
 }
 
+
+.location .location-list-item + .location-list-item {
+    margin-top: 9px;
+}
+
 .location-link {
+    display: inline-block;
+    height: 21px;
     text-decoration: none;
     font-size: 14px;
     line-height: 1.71;
