@@ -33,8 +33,6 @@ h1,h2,h3,h4,h5,h6,p,ul,ol {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    /* padding-top: 47px;
-    padding-bottom: 47px; */
     padding-right: 15px;
     padding-left: 15px;
 
@@ -47,13 +45,7 @@ h1,h2,h3,h4,h5,h6,p,ul,ol {
     align-items: center;
     padding-top: 0px;
     padding-bottom: 0px;
-    /* margin-left: auto;
-    margin-right: auto; */
-
-
-
     
-    /* justify-content: space-between; */
 }
 
 .header-style {
@@ -215,7 +207,6 @@ h1,h2,h3,h4,h5,h6,p,ul,ol {
 
 .flex-list {
     list-style: none;
-    /* margin-top: 94px; */
     display: flex;
 }
 
@@ -258,10 +249,6 @@ h1,h2,h3,h4,h5,h6,p,ul,ol {
 }
 
 .team {
-    /* padding-top: 94px;
-    padding-left: auto;
-    padding-right: auto;
-    padding-bottom: 94px; */
     background-color: var(--section-bg-color);
 }
 
@@ -271,8 +258,6 @@ h1,h2,h3,h4,h5,h6,p,ul,ol {
 }
 
 .team-card {
-    /* display: block; */
-    /* border: 0px; */
     flex-basis: 270px;
     
     background-color: var(--main-bg-color);
@@ -306,8 +291,6 @@ h1,h2,h3,h4,h5,h6,p,ul,ol {
 }
 
 .team-name {
-    /* margin-top: 30px; */
-
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
