@@ -26,7 +26,7 @@ h1,h2,h3,h4,h5,h6,p,ul,ol {
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
-    border: 1px solid tomato;
+    
 }
 
 .container {
@@ -38,7 +38,7 @@ h1,h2,h3,h4,h5,h6,p,ul,ol {
     padding-right: 15px;
     padding-left: 15px;
 
-    border: 1px solid navy;
+    
 
 }
 
@@ -52,8 +52,12 @@ h1,h2,h3,h4,h5,h6,p,ul,ol {
 
 
 
-    border: 1px solid navy;
+    
     /* justify-content: space-between; */
+}
+
+.header-style {
+    border-bottom: 1px solid #ECECEC;
 }
 
 .navigation {
@@ -150,14 +154,7 @@ h1,h2,h3,h4,h5,h6,p,ul,ol {
     
 }
 
-.hero-section {
-    max-width: 1600px;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
 
-    border: 1px solid tomato;
-}
 
 
     
@@ -380,6 +377,8 @@ h1,h2,h3,h4,h5,h6,p,ul,ol {
     list-style: none;
     display: flex;
     justify-content: center;
+    align-items: flex-start;
+    padding-bottom: 16px;
 }
 
 .filter-list .filter-item + .filter-item {
@@ -421,30 +420,44 @@ h1,h2,h3,h4,h5,h6,p,ul,ol {
 
 .portfolio-item {
     flex-basis: 370px;
-    min-height: 404px;
+    
     margin-left: 30px;
     margin-bottom: 30px;
+
+    
     
 
 }
 
 .portfolio-item:nth-child(3n+1) {
-    margin-left: -3px;
+    margin-left: 0px;
 }
 
 .portfolio-item:nth-last-child(-n+3) {
     margin-bottom: 0px;
 }
 
+.portfolio-info {
+    padding-top: 20px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+    padding-left: 20px;
 
-.portfolio-item h2 {
+    border: 1px solid #EEEEEE;
+}
+
+.port-image {
+    display: block;
+}
+
+.portfolio-info h2 {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     
 }
 
-.portfolio-item p {
+.portfolio-info p {
     font-size: 16px;
     line-height: 1.88;
     color: var(--secondary-text-color);
