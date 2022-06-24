@@ -151,7 +151,8 @@ h1,h2,h3,h4,h5,h6,p,ul,ol {
 
 .hero {
     background-color: var(--secondary-bg-color);
-    
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 
@@ -234,6 +235,11 @@ h1,h2,h3,h4,h5,h6,p,ul,ol {
     color: var(--secondary-text-color);
 }
 
+.duties {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
 .duties-title {
     font-size: 36px;
     line-height: 1.17;
@@ -266,7 +272,7 @@ h1,h2,h3,h4,h5,h6,p,ul,ol {
     /* display: block; */
     /* border: 0px; */
     flex-basis: 270px;
-    min-height: 368px;
+    
     background-color: var(--main-bg-color);
 }
 
@@ -276,10 +282,15 @@ h1,h2,h3,h4,h5,h6,p,ul,ol {
     border: 0px;
 }
 
+.team-info {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .team-title {
     font-size: 36px;
     line-height: 1.17;
-    text-align: center;
+    /* text-align: center; */
     
 }
 
@@ -293,7 +304,7 @@ h1,h2,h3,h4,h5,h6,p,ul,ol {
 }
 
 .team-name {
-    margin-top: 30px;
+    /* margin-top: 30px; */
 
     font-weight: 500;
     font-size: 16px;
@@ -444,6 +455,7 @@ h1,h2,h3,h4,h5,h6,p,ul,ol {
     padding-left: 20px;
 
     border: 1px solid #EEEEEE;
+    border-top: 0px solid transparent;
 }
 
 .port-image {
